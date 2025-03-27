@@ -1,0 +1,3 @@
+@Library('jenkins-library') _ //shared librray name
+
+normal_init_pipeline() // call the library groovy method
