@@ -2,10 +2,10 @@ FROM adoptopenjdk/openjdk11
       
 EXPOSE 8080
  
-ENV APP_HOME_PATH1 /usr/src/app
+ENV APP_HOME /usr/src/app
 
 COPY target/*.jar $APP_HOME/app.jar
 
-WORKDIR $APP_HOME_PATH1
+WORKDIR $APP_HOME
 
 CMD ["java", "-jar", "app.jar"]
